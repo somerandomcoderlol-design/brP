@@ -1,9 +1,5 @@
 -- note 2 self: aROK stands for autoRejoinOnKick
 
-if not game:IsLoaded() then
-    game.Loaded:Wait()
-end
-
 local env = getgenv()
 
 if not isfolder("brP") then makefolder("brP" ) end
