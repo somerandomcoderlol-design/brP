@@ -1,3 +1,5 @@
+-- note 2 self: aROK stands for autoRejoinOnKick
+
 if not game:IsLoaded() then
     game.Loaded:Wait()
 end
@@ -8,7 +10,7 @@ if not isfolder("brP") then makefolder("brP" ) end
 if not isfile("brp/config.json") then
     makefile("brP/config.json", game:GetService("HttpService"):JSONEncode({
         settings = {
-            auto_rejoin_on_kick = false,
+            aROK = false, 
         }
     }))
 end
@@ -41,3 +43,5 @@ game:GetService("GuiService").ErrorMessageChanged:Connect(function()
         game:GetService("TeleportService"):Teleport(game.PlaceId)
     end
 end)
+
+loadstring(game:HttpGet(getgitpath("src").."ui.lua"))()
