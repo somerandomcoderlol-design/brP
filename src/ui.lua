@@ -1,3 +1,4 @@
+print("ui start")
 local hui = gethui or get_hidden_gui
 local getexec = identifyexecutor
 local coregui = game:GetService("CoreGui")

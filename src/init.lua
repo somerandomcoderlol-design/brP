@@ -45,3 +45,4 @@ game:GetService("GuiService").ErrorMessageChanged:Connect(function()
 end)
 
 loadstring(game:HttpGet(getgitpath("src").."ui.lua"))()
+print("init load")
