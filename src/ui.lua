@@ -14,3 +14,4 @@ local toggle = ui.Toggle
 local main = ui.Container
 main.Visible = true
 
+print(ui.Parent)
