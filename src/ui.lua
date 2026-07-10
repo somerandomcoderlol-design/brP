@@ -2,9 +2,7 @@ print("ui start")
 local hui = gethui or get_hidden_gui
 local getexec = identifyexecutor
 local coregui = game:GetService("CoreGui")
-local userinputservice = game:GetService("UserInputService")
-local httpservice = game:GetService("HttpService")
-local exservice = game:GetService("ExperienceService")
+
 --game:GetObjects("rbxassetid://89236154208315")[1].Parent = workspace
 
 local ui = import(89236154208315)
