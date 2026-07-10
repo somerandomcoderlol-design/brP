@@ -1,8 +1,8 @@
--- note 2 self: aROK stands for autoRejoinOnKick
-
 local env = getgenv()
+print("can this fucking work")
 
-if not isfolder("brP") then makefolder("brP" ) end
+--[[
+if not isfolder("brP") then makefolder("brP") end
 if not isfile("brp/config.json") then
     makefile("brP/config.json", game:GetService("HttpService"):JSONEncode({
         settings = {
@@ -10,6 +10,7 @@ if not isfile("brp/config.json") then
         }
     }))
 end
+]]
 
 function env.import(id)
     return game:GetObjects("rbxassetid://"..id)[1]
