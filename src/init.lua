@@ -39,4 +39,4 @@ game:GetService("GuiService").ErrorMessageChanged:Connect(function()
     end
 end)
 
-loadstring(game:HttpGet(getgitpath("src").."ui.lua"))()
+loadstring(game:HttpGet(env.getgitpath("src").."ui.lua"))()
